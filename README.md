@@ -214,3 +214,7 @@ kubectl delete deployment/my_first_rlink_application
 ```shell
 sudo docker build -t xxx:xx -f ./docker/Dockerfile_example_simple .
 ```
+
+kill 
+
+ps axu|grep rlink|awk '{print $2}'| xargs  kill

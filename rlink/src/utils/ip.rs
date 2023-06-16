@@ -40,7 +40,8 @@ pub fn get_ip_addrs(hostname: &str) -> std::io::Result<Vec<std::net::IpAddr>> {
 pub fn get_local_ip() -> std::io::Result<std::net::IpAddr> {
     let socket = std::net::UdpSocket::bind("0.0.0.0:0")?;
 
-    socket.connect("8.8.8.8:80")?;
+    //socket.connect("8.8.8.8:80")?;
+    socket.connect("www.baidu.com:80")?;
 
     socket.local_addr().map(|socket_addr| socket_addr.ip())
 }

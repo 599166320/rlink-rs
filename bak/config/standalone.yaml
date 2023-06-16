@@ -1,0 +1,9 @@
+---
+application_manager_address:
+  - "http://127.0.0.1:8770"
+
+metadata_storage:
+  type: Memory
+
+task_manager_bind_ip: 0.0.0.0
+task_manager_work_dir: /Users/gz00018ml/soft/rust/rlink-rs/target/debug/application
